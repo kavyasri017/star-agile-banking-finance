@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('build project'){
             steps{
-                git url:'https://github.com/kavyasri017/pro1/', branch: "master"
+                git url:'https://github.com/kavyasri017/star-agile-banking-finance/', branch: "master"
                 sh 'mvn clean package'
               
             }
@@ -20,7 +20,7 @@ pipeline {
         
      stage('Deploy') {
             steps {
-                sh 'sudo docker run -itd --name My-first-containe21211 -p 8083:8081 kavya699/myimg123'
+                sh 'sudo docker run -itd --name My-first-containe21321 -p 8083:8081 kavya699/myimg123'
                   
                 }
      }
